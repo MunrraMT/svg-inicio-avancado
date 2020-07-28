@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG como Background Image</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SVG como Background Image</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
 
-<style>
-    .icon {
-        display: inline-block;
-        width: 300px;
-        height: 300px;
-    }
-    .icon-music {
-        background-image: url(./audio_file.svg);
-    }
-    .icon-clock {
-        background-image: url(./alarm_clock.svg);
-    }
-</style>
+    <style>
+        .icon {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+        }
+        .icon-music {
+            background-image: url(./audio_file.svg);
+        }
+        .icon-clock {
+            background-image: url(./alarm_clock.svg);
+        }
+    </style>
 
-<body>
+    <body>
 
-    <h1>
-        SVG como Background Image
-    </h1>
+        <h1>
+            SVG como Background Image
+        </h1>
 
-    <i class="icon icon-music"></i>
-    <i class="icon icon-clock"></i>
-    
-</body>
+        <i class="icon icon-music"></i>
+        <i class="icon icon-clock"></i>
+
+        <div class="pros-cons">
+            <p class="good">Podem ser cacheadas</p>
+            <p class="bad">Sem interação de CSS</p>
+            <p class="bad">Sem edição no DOM</p>
+            <p class="medium">Animações só funcionam se estiverem dentro do SVG</p>
+        </div>
+        
+    </body>
 </html>
