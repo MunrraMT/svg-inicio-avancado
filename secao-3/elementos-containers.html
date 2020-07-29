@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG - Elementos Containers</title>
+    <link rel="stylesheet" href="./elementos-containers.css">
+</head>
+<body>
+    
+    <h1>
+        SVG - Elementos Containers
+    </h1>
+
+    <h2>Defs</h2>
+    <svg>
+        <defs>
+            <circle id="meu-circulo" cx="150" cy="50" r="25"/>
+        </defs>
+
+        <use xlink:href="#meu-circulo"/>
+        <use xlink:href="#meu-circulo" x="80" fill="red"/>
+    </svg>
+
+    <h2>Group</h2>
+    <svg>
+        <g fill="blue">
+            <circle id="meu-circulo" cx="150" cy="50" r="25"/>
+            <circle id="meu-circulo" cx="240" cy="50" r="25"/>            
+        </g>
+    </svg>
+
+    <h2>Symbol</h2>
+    <svg>
+        <symbol id="meu-symbolo" viewBox="0 0 600 300">
+            <circle cx="150" cy="50" r="25"/>
+        </symbol>
+
+        <use xlink:href="#meu-symbolo"/>
+        <use xlink:href="#meu-symbolo" x="80" fill="red"/>
+    </svg>
+
+</body>
+</html>
