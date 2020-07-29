@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill e Stroke</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>
+        Fill e Stroke
+    </h1>
+
+    <style>
+        .circle {
+            stroke: #000;
+            stroke-width: 5;
+        }
+        .circle-1 {
+            fill: red;
+            stroke-dasharray: 400;
+            stroke-dashoffset: 100;
+        }
+        .circle-2 {
+            fill: blue;
+            fill-opacity: 0.8;
+        }
+        .circle-3 {
+            fill: green;
+            fill-opacity: 0.6;
+            stroke-dasharray: 10;
+        }
+    </style>
+
+    <svg width="500" height="150" viewBox="0 0 500 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <circle class="circle circle-1" cx="200" cy="75" r="55"/>
+        <!-- <circle class="circle circle-2" cx="250" cy="75" r="55"/>
+        <circle class="circle circle-3" cx="300" cy="75" r="55"/> -->
+    </svg>
+
+    <svg width="500" height="150" viewBox="0 0 500 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <circle class="circle circle-1" cx="200" cy="75" r="55"/>
+        <circle class="circle circle-2" cx="250" cy="75" r="55"/>
+        <circle class="circle circle-3" cx="300" cy="75" r="55"/>
+    </svg>
+
+</body>
+</html>
