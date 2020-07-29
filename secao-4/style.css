@@ -39,3 +39,7 @@ svg {
     vertical-align: top;
     margin-top: 26px;
 }
+
+.hidden {
+    display: none;
+}
