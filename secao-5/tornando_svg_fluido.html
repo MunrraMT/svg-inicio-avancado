@@ -6,11 +6,36 @@
     <title>Tornando o SVG fluido</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    body {
+        background-color: #240701;
+    }
+    .container {
+        max-width: 700px;
+        margin: auto;
+    }
+    #linhas_externas, #registro, #circulo_verde, #texto_branco, #path4273, #imagem_central {
+        transition: all 0.3s;
+    }
+    @media only screen and (max-width: 768px) {
+        #linhas_externas, #registro {
+            opacity: 0;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        #circulo_verde, #texto_branco {
+            opacity: 0;
+        }
+        #imagem_central {
+            display: block !important;
+            transform: scale(1.5) translate(-22.3px, -24.5px);
+        }
+        #path4273 {
+            fill: #067655 !important;
+        }
+    }
+</style>
 <body>
-    
-    <h1>
-        Tornando o SVG fluido
-    </h1>
 
     <div class="container">
         <svg
