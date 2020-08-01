@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG - Utilizando JS para estilizar e criar novos elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>
+        SVG - Utilizando JS para estilizar e criar novos elementos
+    </h1>
+    
+    <div class="container">
+        
+        <button id="create">
+            Criar circulo
+        </button>
+
+        <svg class="desenho" width="500" height="500" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        </svg>
+    </div>
+
+    <script>
+        var desenho = document.querySelector('.desenho');
+        var svgNS = 'http://www.w3.org/2000/svg';
+
+        function createCircle() {
+            var myCircle = document.createElementNS(svgNS, "circle");
+
+            var randomX = Math.floor(Math.random() * 450);
+            var randomy = Math.floor(Math.random() * 450);
+
+            myCircle.setAttributeNS(null, "r", 10);
+            myCircle.setAttributeNS(null, "cx", randomX);
+            myCircle.setAttributeNS(null, "cy", randomy);
+            myCircle.setAttributeNS(null, "fill", "blue");
+
+            desenho.appendChild(myCircle);
+        }
+
+        var btnCreateCircle = document.querySelector('#create');
+        btnCreateCircle.addEventListener("click", createCircle);
+    </script>
+    
+</body>
+</html>
