@@ -16,6 +16,7 @@ svg {
 
 .container {
     width: 100vw;
+    height: calc(100vh - 425px);
     display: grid;
     place-content: center;
 }
