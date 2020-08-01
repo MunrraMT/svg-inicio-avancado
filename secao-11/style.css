@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem 1.4rem;
+}
+
+svg {
+    border: 1px solid red;
+}
+
+.container {
+    width: 100vw;
+    height: calc(100vh - 425px);
+    display: grid;
+    place-content: center;
+}
